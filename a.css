@@ -74,6 +74,7 @@ hr {
 .topNavBar-inner.logo.rs {
   margin-right: 4px;
   color: #e6686a;
+  text-decoration: none;
 }
 
 .banner {
