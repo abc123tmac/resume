@@ -100,46 +100,62 @@
       <li>
         <h3>HTML5 css3</h3>
         <div class="progressBar">
-          <div class="progress"></div>
+          <div class="progress" style="width: 10%;"></div>
         </div>
       </li>
-      <li><h3>JavaScript</h3>
+      <li>
+        <h3>JavaScript</h3>
         <div class="progressBar">
-          <div class="progress"></div>
-        </div></li>
-      <li><h3>jQuery</h3>
+          <div class="progress" style="width: 0;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>jQuery</h3>
         <div class="progressBar">
-          <div class="progress"></div>
-        </div></li>
-      <li><h3>Vue.js</h3>
+          <div class="progress" style="width: 0;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Vue.js</h3>
         <div class="progressBar">
-          <div class="progress"></div>
-        </div></li>
-      <li><h3>React.js</h3>
+          <div class="progress" style="width: 0;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>React.js</h3>
         <div class="progressBar">
-          <div class="progress"></div>
-        </div></li>
-      <li><h3>Node.js</h3>
+          <div class="progress" style="width: 0;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Node.js</h3>
         <div class="progressBar">
-          <div class="progress"></div>
-        </div></li>
+          <div class="progress" style="width: 0;"></div>
+        </div>
+      </li>
     </ol>
 
   </section>
-  <section>
+  <section class="portfolio">
     <h2>作品集</h2>
     <nav>
-      <ol>
-        <li>所有</li>
-        <li>框架</li>
-        <li>原生JS</li>
+      <ol class="clearfix">
+        <li id="portfolio1">所有</li>
+        <li id="portfolio2">框架</li>
+        <li id="portfolio3">原生JS</li>
 
       </ol>
+      <div id="portfolioBar" class="bar state1">
+        <div class="bar-inner"></div>
+      </div>
     </nav>
-    <div class="jobs">
-      <div class="big"></div>
-      <div class="small"></div>
-      <div class="small"></div>
+    <script>portfolio1.onclick = function () { portfolioBar.className = 'bar state1' }
+      portfolio2.onclick = function () { portfolioBar.className = 'bar state2' }
+      portfolio3.onclick = function () { portfolioBar.className = 'bar state3' }</script>
+    <div class="works" style="height:597px;">
+      <div class="big" style="top: 0; left: 0;"><img src="./img/1.jpg" alt="作品1"></div>
+      <div class="small" style="top: 0; left: 637px;"><img src="./img/2.jpg" alt="作品2"></div>
+      <div class="small" style="top: 293px; left: 637px;"><img src="./img/3.jpg" alt="作品3"></div>
     </div>
 
   </section>

@@ -228,13 +228,13 @@ body>main .downloadresume:hover {
   font-size: 18px;
 }
 
-section.skills {
+section.skills, section.portfolio {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
 }
 
-section.skills>h2 {
+section.skills>h2, section.portfolio>h2 {
   text-align: center;
   display: block;
   font-size: 1.5em;
@@ -243,7 +243,6 @@ section.skills>h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  
 }
 
 section.skills>ol {
@@ -281,3 +280,66 @@ section.skills>h3 {
   line-height: 1.1;
   padding-right: 48px;
 }
+
+section.portfolio {
+  text-align: center;
+}
+
+section.portfolio>nav {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+section.portfolio>nav>ol {
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+section.portfolio>nav>ol>li {
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+section.portfolio>nav>ol>li:nth-child(1) {
+  margin-left: 0px;
+}
+
+section.portfolio>nav .bar {
+  height: 5px;
+  background: white;
+  margin-top: 5px;
+  margin-bottom: 100px;
+  border-radius: 2px;
+}
+
+section.portfolio>nav .bar-inner {
+  height: 100%;
+  background: #cf5d5f;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+section.portfolio>nav .bar.state1 .bar-inner {
+  margin-left: 0;
+  width: 50px;
+}
+
+section.portfolio>nav .bar.state2 .bar-inner {
+  margin-left: 65px;
+  width: 50px;
+}
+
+section.portfolio>nav .bar.state3 .bar-inner {
+  margin-left: 140px;
+  width: 51px;
+}
+
+section.portfolio .works {
+  position: relative;
+}
+section.portfolio .works > .big,
+section.portfolio .works > .small{position: absolute;}
